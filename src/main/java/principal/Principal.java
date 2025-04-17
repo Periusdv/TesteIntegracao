@@ -27,7 +27,7 @@ public class Principal {
                     desenho.adicionar(triangulo);
                     break;
                 }
-                 case "2": {
+                case "2": {
                     Retangulo retangulo = new Retangulo();
                     retangulo.setCor(JOptionPane.showInputDialog("Digite a Cor do Retângulo"));
                     retangulo.setBase(Double.parseDouble(JOptionPane.showInputDialog("Digite a Base do Retângulo")));
@@ -36,19 +36,19 @@ public class Principal {
                     //Adiciona o objeto ao desenho
                     desenho.adicionar(retangulo);
                     break;
-                } 
+                }
                 case "3": {
                     System.out.println("Lista das figuras do desenho");
-                    for (int i=0;i<desenho.getFiguras().size();i++){
+                    for (int i = 0; i < desenho.getFiguras().size(); i++) {
                         System.out.println(i + "-" + desenho.getFiguras().get(i).getClass().getName() + " com area:" + desenho.getFiguras().get(i).getArea());
-                    }                    
+                    }
                     break;
-                }                
+                }
                 case "4": {
                     System.out.println("Area total do desenho:" + desenho.getArea());
                     break;
                 }
+            }
         }
     }
- }
 }
